@@ -3,8 +3,7 @@
 This project is a backend service that serves as a proxy to fetch issues from a GitHub repository. It is implemented in Python and uses the built-in HTTP server. The service is containerized using Docker, and you can also run it without Docker for local development.
 
 ## Project Structure
-
-- cmd/server/main.py: The entry point for the server.
+- app_cmd/server/main.py: The entry point for the server.
 - internal/api/handler.py: Contains the request handler logic.
 - internal/github/client.py: Handles communication with the GitHub API.
 - pkg/logger/logger.py: Implements a simple logging utility.
@@ -15,7 +14,6 @@ This project is a backend service that serves as a proxy to fetch issues from a 
 - requirements.txt: Lists Python dependencies.
 
 ## Requirements
-
 - Python 3.8 or higher
 - Docker (optional, for containerized deployment)
 
@@ -24,15 +22,13 @@ This project is a backend service that serves as a proxy to fetch issues from a 
 1. **Clone the Repository**
 
     ```git clone https://github.com/Hmitchell433/presence-test-project.git```
-    ```cd presence-test-project```
+    ```cd presence-test-project/app```
 
 2. **Setup Environment Variables**
 
   Create a `.env` file in the app directory with the following content:
 
-  ```
-    SERVER_PORT=8080
-  ```
+  ```SERVER_PORT=8080```
 
   Update the values as needed.
 

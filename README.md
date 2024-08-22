@@ -52,7 +52,7 @@ This project is a backend service that serves as a proxy to fetch issues from a 
 
     You can test the service using curl or Postman. For example:
 
-    ```curl "http://localhost:8080/?owner=your-repo-owner&repo=your-repo-name"```
+    ```curl "http://{host}/?owner=your-repo-owner&repo=your-repo-name```
 
 ### With Docker
 
@@ -72,5 +72,3 @@ This project is a backend service that serves as a proxy to fetch issues from a 
 ## Logging
   The service includes basic logging. Logs are output to the console. You can adjust the logging level and format in pkg/logger/logger.py.
 
-## Additional Information
-- **CI/CD:** For continuous integration and deployment, you may set up pipelines in tools like CircleCI
